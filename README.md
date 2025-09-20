@@ -1,4 +1,4 @@
-#AI + Forex (USDJPY) Prediction Project
+#AI + Forex (USD/JPY) Prediction Project
 
 📈 This project explores forecasting USD/JPY exchange rate movements using a combination of traditional statistical analysis and machine learning (LSTM deep learning models). The goal is to test whether AI can improve prediction accuracy compared to simple baselines.
 
