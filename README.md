@@ -70,11 +70,9 @@ The goal: predict whether USD/JPY will go up or down the next day.
 
 | Model               | Accuracy       |
 |---------------------|---------------|
-| Logistic Regression | XX%           |
-| Random Forest       | XX%           |
-| LSTM (best)         | XX%           |
-
-*Replace XX% with your actual results. Need help calculating? Let me know!*
+| Logistic Regression | 57.3%           |
+| Random Forest       | 53.5%           |
+| LSTM (best)         | 54.5%           |
 
 ---
 
