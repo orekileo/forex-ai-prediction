@@ -1,113 +1,113 @@
-#AI + Forex (USD/JPY) Prediction Project
+# AI + Forex (USD/JPY) Prediction Project
+> Forecasting USD/JPY exchange rates with machine learning and statistical analysis.
 
-📈 This project explores forecasting USD/JPY exchange rate movements using a combination of traditional statistical analysis and machine learning (LSTM deep learning models). The goal is to test whether AI can improve prediction accuracy compared to simple baselines.
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![License](https://img.shields.io/github/license/orekileo/forex-ai-prediction)
 
+---
 
-📊 Project Overview
+## Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Models Used](#models-used)
+- [Methods](#methods)
+- [Results](#results)
+- [Installation & Usage](#installation--usage)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
-Dataset: Historical USD/JPY prices and Nikkei 225 index (2010–2025), downloaded via Yahoo Finance.
+---
 
+## Overview
 
+This project explores forecasting USD/JPY exchange rate movements using traditional statistical analysis and machine learning (LSTM models).  
+The goal: predict whether USD/JPY will go up or down the next day.
 
+---
 
+## Dataset
 
-Models Used:
+- **Source:** Yahoo Finance
+- **Period:** 2010–2025
+- **Assets:** USD/JPY prices, Nikkei 225 index
 
-Logistic Regression (baseline classification of up/down moves)
+---
 
-Random Forest Classifier
+## Models Used
 
-LSTM Neural Network (TensorFlow/Keras)
+- **Logistic Regression** (baseline classification)
+- **Random Forest Classifier**
+- **LSTM Neural Network** (TensorFlow/Keras)
 
-Features: Daily returns, lagged returns, and Nikkei correlations.
+**Features:**  
+- Daily returns  
+- Lagged returns  
+- Nikkei correlations  
 
-Target: Predict whether USD/JPY will go up (1) or down (0) the next day.
+**Target:**  
+- Next-day USD/JPY up (1) or down (0)
 
+---
 
+## Methods
 
+**Data Collection**
+- Fetch USD/JPY and Nikkei 225 using `yfinance`
+- Preprocess: returns and lagged features
 
+**Modeling**
+- Logistic Regression & Random Forest for classification
+- LSTM for sequence learning on time-series data
 
+**Evaluation**
+- Accuracy
+- Confusion matrix
+- Trading-signal backtesting
 
-🚀 Methods
+---
 
-Data Collection
+## Results
 
-Fetched USD/JPY and Nikkei 225 data using yfinance.
+| Model               | Accuracy       |
+|---------------------|---------------|
+| Logistic Regression | XX%           |
+| Random Forest       | XX%           |
+| LSTM (best)         | XX%           |
 
-Preprocessed data into returns and lagged features.
+*Replace XX% with your actual results. Need help calculating? Let me know!*
 
-Modeling
+---
 
-Logistic Regression and Random Forest for classification.
+## Installation & Usage
 
-LSTM for sequence learning on time-series data.
+```bash
+# 1. Clone this repository
+git clone https://github.com/orekileo/forex-ai-prediction.git
+cd forex-ai-prediction
 
-Evaluation
-
-Accuracy, confusion matrix, and trading-signal backtesting.
-
-
-
-
-
-
-📈 Results
-
-Logistic Regression: ~XX% accuracy
-
-Random Forest: ~XX% accuracy
-
-LSTM: ~XX% accuracy (best performer)
-
-(Replace XX% with your actual results – or I can help you calculate from your notebook!)
-
-
-
-
-
-
-
-🛠️ Installation & Usage
-
-1. Clone this repository:
-git clone https://github.com/yourusername/ai-forex-usdjpy.git
-cd ai-forex-usdjpy
-
-2. Install dependencies:
+# 2. Install dependencies
 pip install -r requirements.txt
 
-3. Run the Jupyter Notebook:
+# 3. Run the Jupyter Notebook
 jupyter notebook "AI + Forex (USDJPY) project (2).ipynb"
+```
 
+---
 
+## Future Improvements
 
+- Add macroeconomic features (interest rates, US yields, oil prices)
+- Explore advanced deep learning models (GRU, Transformer)
+- Compare with technical indicators (RSI, MACD, Bollinger Bands)
 
+---
 
+## Author
 
-
-
-🔮 Future Improvements
-
-Add more macroeconomic features (interest rates, US yields, oil prices).
-
-Explore advanced deep learning models (GRU, Transformer).
-
-Compare with technical indicators (RSI, MACD, Bollinger Bands).
-
-
-
-
-
-
-
-📌 Author
-
-👤 Orest
-
-MSc Law & Finance, University of Leeds
-
+**Orest**  
+MSc Law & Finance, University of Leeds  
 Interested in finance, AI, and algorithmic trading
 
+[GitHub Profile](https://github.com/orekileo)
 
-
-
+---
